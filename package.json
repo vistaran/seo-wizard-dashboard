@@ -1,0 +1,33 @@
+{
+  "name": "seo-wizard",
+  "version": "1.0.0",
+  "description": "Centralized SEO / AEO / GEO dashboard for Vistaran Tech's portfolio (multi-tenant).",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node api.js && node server/index.js",
+    "server": "node server/index.js",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "npm --prefix client run dev",
+    "build": "node api.js && npm --prefix client install && npm --prefix client run build",
+    "build:client": "npm --prefix client run build",
+    "install:client": "npm --prefix client install"
+  },
+  "keywords": [
+    "seo",
+    "aeo",
+    "geo",
+    "dashboard",
+    "gsc",
+    "ga4"
+  ],
+  "author": "Vistaran Tech",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "google-auth-library": "^11.1.0",
+    "googleapis": "^182.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+client/node_modules/
+client/dist/
+server/data/*.db
+server/data/*.db-wal
+server/data/*.db-shm
+.env
+*.log
+.DS_Store
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
